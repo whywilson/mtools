@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">   <meta charset="utf-8"/>
+<style>img{max-width: 100%; width:auto; height:auto;}</style>
+<style>
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}</style>
+  <title>MDReader</title>
+</head>
+<body>
+  <div id="content"><h1 id="教程1">教程1</h1>
+<h2 id="要求-">要求：</h2>
+<ol>
+<li>一部支持NFC的手机  </li>
+<li>知道IC卡的密钥ab  </li>
+</ol>
+<p>（不知道的请下载M keys进行尝试破解）</p>
+<h2 id="步骤-">步骤：</h2>
+<h3 id="第一步-添加水卡-">第一步(添加水卡)</h3>
+<p>打开软件M Tools，点击加号，添加一张IC卡。
+<img src="https://i.loli.net/2018/01/31/5a7103b22f09c.png" alt="Screenshot_2018-01-30-19-15-55-170_tk.toolkeys.mtools.png"><br>添加之后，点击详情，点击添加密钥，左边选择你金额扇区，比如我的是8扇区，如下图
+<img src="https://i.loli.net/2018/01/31/5a710458f172d.png" alt="Screenshot_2018-01-30-19-23-06-446_tk.toolkeys.mtools.png">   </p>
+<h3 id="第二步-添加规则-">第二步(添加规则)</h3>
+<p>点击扇区左边的按钮，选择需要更改的块
+<br>先标记金额，比如我的ic卡前三位是金额，所以标记下前三位，然后验证，选择倒置，倍率为100，点击下一步<br><img src="https://i.loli.net/2018/01/31/5a710c7852d7b.png" alt="Screenshot_2018-01-31-08-22-01-725_tk.toolkeys.mtools.png">  </p>
+<h3 id="第三步-标记校验字节-">第三步(标记校验字节)</h3>
+<p>校验字节就是随你金额而变动的字节，只要会变动就都标记<br><img src="https://i.loli.net/2018/01/31/5a710d1ad205d.png" alt="Screenshot_2018-01-31-08-25-49-636_tk.toolkeys.mtools.png">  </p>
+<p>标记完成后就填写下方表达式<br>表达式也就是计算公式  </p>
+<p>例如：
+金额数据如下：</p>
+<pre><code>
+6D 20 00 00 FF FF FF FF 6D 20 00 00 20 DF 20 DF
+</code></pre>
+<p>比如我的b0,b1,b2(6D,20,00)是金额，同样b8 b9 b10也是金额，可以说是b8,b9,b10随b0,b1,b2改变而改变</p>
+<p>表达式可以这样写：</p>
+<pre><code>
+b8=(b0)
+
+b9=(b1)
+
+b10=(b2)
+</code></pre>
+<p><img src="https://i.loli.net/2018/01/31/5a710dc39c5f5.png" alt="Screenshot_2018-01-31-08-25-24-308_tk.toolkeys.mtools.png"></p>
+<p>举例：
+校验位算法 → 填写方式</p>
+<pre><code>
+b2=b1 →b2=b1
+b4=b2+0x1F → b4=b2+31
+b15=b0 xor b1 → b15=b0@^b1
+b2=not b0 → b2@~b0
+</code></pre>
+<p>注1：请将十六进制数转换成十进制<br>注2：按从上至下的顺序计算</p>
+<p>写完后点击OK<br>其它块如果相同，需重新添加或复制  </p>
+<h3 id="第四步-充值金额-">第四步(充值金额)</h3>
+<p>卡片拿开重新放上，显示金额<br><img src="https://i.loli.net/2018/01/31/5a710e18c0969.png" alt="Screenshot_2018-01-31-08-29-57-623_tk.toolkeys.mtools.png"><br>输入金额，点击＄按钮<br><img src="https://i.loli.net/2018/01/31/5a710e52afa6c.png" alt="Screenshot_2018-01-31-08-30-53-778_tk.toolkeys.mtools.png"><br><img src="https://i.loli.net/2018/01/31/5a710e52ba734.png" alt="Screenshot_2018-01-31-08-30-58-352_tk.toolkeys.mtools.png">  </p>
+<p><em>ps:如果出错请检查你的算法及表达式</em></p>
+</div></body>
+</html>
