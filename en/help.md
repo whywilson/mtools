@@ -1,4 +1,4 @@
-[选择语言](../index.html)  
+[Select Language](../index.html)  
 
 # 1.Overview
 Here is a Material Design APP to make Charge `Mifare Classic Card` Easily.  
@@ -56,12 +56,22 @@ The calculation is from top to the end.
 Press and drag to sort Keys.
 ###	2.2.7 Remove Key
 Slide the item toward right to remove the key.
+### 2.2.8 key Lists 
+Long press the floating button to show key lists.  
 ## 2.3 Charge
 ### 2.3.1 Set Quotas
 Long press **the Charge TextView** , you can charge as the Quotas. 
 ### 2.3.2 Clear Record
-Long press **the recharge record list**, then pop up the dialog will allow you to to clear the recharge record or not.
-# 3.Dependency  
+Long press **the recharge record list**, then pop up the dialog will allow you to to clear the recharge record or not.  
+### 2.3.3 Show Calculate Result 
+Long press the floating button to preview the data generated on **Rule**.
+
+# 3.Debug  
+Long press the floating button to enable debugging features.
+- 【Lists】Add a card with UID **FFFFFFFF**   
+- 【Others】Ignore **unsupported** devices check.   
+
+# 4.Dependency  
 Thanks for the friends on the contribution of open source community, regardless of rank.  
 - `ikarus23` [MifareClassicTool](https://github.com/ikarus23/MifareClassicTool "MifareClassicTool")  
 - `afollestad` [material-dialogs](https://github.com/afollestad/material-dialogs "material-dialogs")  
