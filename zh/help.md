@@ -82,6 +82,7 @@
 
 # 5.教程  
 以下教程来自网友
-- [教程1](tutorial/tutorial_0.html)  
+- [教程1: 水卡充值](tutorial/tutorial_0.html)   
+- [教程2: 对比分析HEX数据](tutorial/tutorial_compare_hex_data.html)
 
 *欢迎投稿*
