@@ -288,7 +288,71 @@ img {
   <title>MDReader</title>
 </head>
 <body>
-  <div id="content"><h1 id="-中文-zh-index-html-"><a href="./zh/index.html">中文</a></h1>
-<h1 id="-english-en-index-html-"><a href="./en/index.html">English</a></h1>
+  <div id="content"><p><a href="../index.html">Select Language</a>  </p>
+<h1 id="1-overview">1.Overview</h1>
+<p>Here is a Material Design APP to make Charge <code>Mifare Classic Card</code> Easily.<br>Please make sure your device support <code>Mifare Classic</code>, or you can do nothing with this APP.<br>Please comply with local laws, this APP is for testing and technical exchange only.</p>
+<h1 id="2-tutorial">2.Tutorial</h1>
+<h2 id="2-1-lists">2.1 Lists</h2>
+<h3 id="2-1-1-add-card">2.1.1 Add Card</h3>
+<p>Click the <strong>+ floating button</strong> will display <code>Add Card Dialog</code>, put the Mifare Classic Card close to the NFC antenna, then you can add a card to the APP.</p>
+<h3 id="2-1-2-remove-card">2.1.2 Remove Card</h3>
+<p>Slide the item toward right to remove the card.</p>
+<h3 id="2-1-3-sort-card">2.1.3 Sort Card</h3>
+<p>Press and drag to sort Cards.</p>
+<h2 id="2-2-details">2.2 Details</h2>
+<h3 id="2-2-0-interface-introduction">2.2.0 Interface Introduction</h3>
+<p><img src="img/button_func.jpeg" alt="image"></p>
+<h3 id="2-2-1-add-key">2.2.1 Add Key</h3>
+<p>Click the <strong> + floating button </strong> to display <code>Add Key Dialog</code>, select the sector number by sliding the picker, and enter 6 bytes (12 digits or letters) valid key A or key B, click <code>Complete</code> to save.</p>
+<h3 id="2-2-2-modify-key">2.2.2 Modify Key</h3>
+<p>Click the <strong> modify button </strong> will display the <code>Modify Key Dialog</code>,  select new  sector number by sliding the picker, and modify the 6 bytes (12 digits or letters) valid key A or key B, click <code>Complete</code>save new keys or sector.</p>
+<h3 id="2-2-3-read-sector">2.2.3 Read Sector</h3>
+<p>After the card is close to the NFC antenna, click on the <strong> read button </strong> will read 4 block of data from clicked sector, you could modify and write the new data.  </p>
+<h3 id="2-2-4-data-sniff-compare">2.2.4 Data Sniff/Compare</h3>
+<p>Must add correct keys before. After marked, it can be  compared with highlight datas.<br>[Pro Version] Data Backups/Restore, Compare vertically, Rule Repository.  </p>
+<h3 id="2-2-5-add-rule">2.2.5 Add Rule</h3>
+<h3 id="2-2-5-0-interface-introduction">2.2.5.0 Interface Introduction</h3>
+<p>Click data item to add/modify rule.<br>Click icon to copy rule to another block of another sector.<br>[Pro Version] Rule copy.
+<img src="img/select_block.jpeg" alt="image"></p>
+<h4 id="2-2-5-1-add-money-byte">2.2.5.1 Add Money Byte</h4>
+<p>Mark the byte, then verify the money is correct, and click Next.<br><img src="img/mark_money.jpeg" alt="image">. </p>
+<h4 id="2-2-5-2-add-checked-byte">2.2.5.2 Add Checked Byte</h4>
+<p>Check the bytes that changes and add expressions. Make sure that it&#39;s correct then click OK.<br><img src="img/mark_check.jpeg" alt="image"></p>
+<h5 id="2-2-5-2-1-supported-operations-">2.2.5.2.1 Supported operations:</h5>
+<blockquote>
+<p>And: +<br>Subtraction: -<br>Multiply: *<br>division: /<br>xor: @^<br>not: @~  
+   </p>
+</blockquote>
+<p><em>Note: Only decimal arithmetic is supported</em><br><strong>Get Expressions Example <a href="./help_add_rules.html">Click Here</a></strong>  </p>
+<h5 id="2-2-5-2-2-sort-expressions">2.2.5.2.2 Sort Expressions</h5>
+<p>Press and drag to sort Expressions.<br>The calculation is from top to the end.</p>
+<h3 id="2-2-6-sort-keys">2.2.6 Sort Keys</h3>
+<p>Press and drag to sort Keys.</p>
+<h3 id="2-2-7-remove-key">2.2.7 Remove Key</h3>
+<p>Slide the item toward right to remove the key.</p>
+<h3 id="2-2-8-key-lists">2.2.8 key Lists</h3>
+<p>Long press the floating button to show key lists.  </p>
+<h2 id="2-3-charge">2.3 Charge</h2>
+<h3 id="2-3-1-set-quotas">2.3.1 Set Quotas</h3>
+<p>Long press <strong>the Charge TextView</strong> , you can charge as the Quotas. </p>
+<h3 id="2-3-2-clear-record">2.3.2 Clear Record</h3>
+<p>Long press <strong>the recharge record list</strong>, then pop up the dialog will allow you to to clear the recharge record or not.  </p>
+<h3 id="2-3-3-show-calculate-result">2.3.3 Show Calculate Result</h3>
+<p>Long press the floating button to preview the data generated on <strong>Rule</strong>.</p>
+<h1 id="3-debug">3.Debug</h1>
+<p>Long press the floating button to enable debugging features.</p>
+<ul>
+<li>【Lists】Add a card with UID <strong>FFFFFFFF</strong>   </li>
+<li>【Others】Ignore <strong>unsupported</strong> devices check.   </li>
+</ul>
+<h1 id="4-dependency">4.Dependency</h1>
+<p>Thanks for the friends on the contribution of open source community, regardless of rank.  </p>
+<ul>
+<li><code>ikarus23</code> <a href="https://github.com/ikarus23/MifareClassicTool" title="MifareClassicTool">MifareClassicTool</a>  </li>
+<li><code>afollestad</code> <a href="https://github.com/afollestad/material-dialogs" title="material-dialogs">material-dialogs</a>  </li>
+<li><code>markormesher</code> <a href="https://github.com/markormesher/android-fab">android-fab</a>  </li>
+<li><code>didikee</code> <a href="https://github.com/didikee/AndroidDonate" title="AndroidDonate">AndroidDonate</a>  </li>
+<li><code>Ice-Box</code> <a href="http://catchingnow.com">Ice-Box</a>  </li>
+</ul>
 </div></body>
 </html>
