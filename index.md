@@ -1,2 +1,2 @@
-# [中文](./zh/help.html)
-# [English](./en/help.html)
+# [中文](./zh/index.html)
+# [English](./en/index.html)
