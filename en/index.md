@@ -1,9 +1,15 @@
 [Select Language](../index.html)  
 
 # 1.Overview
-Here is a Material Design APP to make Charge `Mifare Classic Card` Easily.  
-Please make sure your device support `Mifare Classic`, or you can do nothing with this APP.  
-Please comply with local laws, this APP is for testing and technical exchange only.
+Here is a Material Design APP to make charge `Mifare Classic Card` easily.  
+Attention:  
+1. `Mifare 1K `Supported Device.  
+(Or OTG support `ACR122U`)
+2. KeyA and keyB of useful sector. 
+3. Comply with local laws, only used for study and testing.
+
+
+
 # 2.Tutorial
 ## 2.1 Lists
 ### 2.1.1 Add Card
@@ -68,8 +74,7 @@ Long press the floating button to preview the data generated on **Rule**.
 
 # 3.Debug  
 Long press the floating button to enable debugging features.
-- 【Lists】Add a card with UID **FFFFFFFF**   
-- 【Others】Ignore **unsupported** devices check.   
+- 【Lists】Add a card by click the icon of `Add card dialog`me     
 
 # 4.Dependency  
 Thanks for the friends on the contribution of open source community, regardless of rank.  

@@ -290,7 +290,12 @@ img {
 <body>
   <div id="content"><p><a href="../index.html">Select Language</a></p>
 <h1 id="1-概览">1.概览</h1>
-<p>这是一个让充值<code>Mifare Classic 卡片</code>更容易的质感设计的应用。<br>请确保您的设备支持<code>Mifare Classic</code>，否则这个应用对您毫无用处。<br>请遵守当地法律，本应用仅供测试使用。</p>
+<p>一个使<code>Mifare卡片</code>充值更快捷的应用。<br>请确保以下3点：</p>
+<ol>
+<li>设备支持<code>Mifare Classic 1K Card</code><br>(或支持OTG连接<code>ACR122U</code>)</li>
+<li>已知卡片的有效扇区的密钥keyA和keyB</li>
+<li>遵守当地法律，仅供学习测试使用  </li>
+</ol>
 <h1 id="2-向导">2.向导</h1>
 <h2 id="2-1-列表">2.1 列表</h2>
 <h3 id="2-1-1-添加卡片">2.1.1 添加卡片</h3>
@@ -344,10 +349,9 @@ img {
 <h3 id="2-3-3-预览计算结果">2.3.3 预览计算结果</h3>
 <p>长按浮动按钮，可预览由 <strong>规则</strong> 生成的数据。</p>
 <h1 id="3-调试">3.调试</h1>
-<p>可开启浮动按钮的 <strong>长按</strong> 功能等，包括：  </p>
+<p>可开启浮动按钮的其他功能等，包括：  </p>
 <ul>
-<li>【列表】添加UID为 <strong>FFFFFFFF</strong> 的卡片  </li>
-<li>【其他】忽略设备硬件<strong>不支持</strong>   </li>
+<li>【列表】点击<code>添加卡片对话框</code>中心NFC图标可添加卡片，UID为本设备UID前4字节  </li>
 </ul>
 <h1 id="4-依赖">4.依赖</h1>
 <p>感谢以下网友对开源社区的贡献，排名不分先后。  </p>
