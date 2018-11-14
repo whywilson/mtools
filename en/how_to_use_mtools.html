@@ -288,76 +288,40 @@ img {
   <title>MDReader</title>
 </head>
 <body>
-  <div id="content"><p><a href="../index.html">Select Language</a>  </p>
-<h1 id="1-overview">1.Overview</h1>
-<p>Here is a Material Design APP to make charge <code>Mifare Classic Card</code> easily.<br>Attention:  </p>
-<ol>
-<li><code>Mifare 1K</code>Supported Device.<br>(Or OTG support <code>ACR122U</code>)</li>
-<li>KeyA and keyB of useful sector. </li>
-<li>Comply with local laws, only used for study and testing.</li>
-</ol>
-<h1 id="2-tutorial">2.Tutorial</h1>
-<h2 id="-how-to-use-mtools-how_to_use_mtools-html-"><a href="./how_to_use_mtools.html">How to use MTools</a>  </h2>
-<h2 id="2-1-lists">2.1 Lists</h2>
-<h3 id="2-1-1-add-card">2.1.1 Add Card</h3>
-<p>Click the <strong>+ floating button</strong> will display <code>Add Card Dialog</code>, put the Mifare Classic Card close to the NFC antenna, then you can add a card to the APP.</p>
-<h3 id="2-1-2-remove-card">2.1.2 Remove Card</h3>
-<p>Slide the item toward right to remove the card.</p>
-<h3 id="2-1-3-sort-card">2.1.3 Sort Card</h3>
-<p>Press and drag to sort Cards.</p>
-<h2 id="2-2-details">2.2 Details</h2>
-<h3 id="2-2-0-interface-introduction">2.2.0 Interface Introduction</h3>
-<p><img src="img/button_func.jpeg" alt="image"></p>
-<h3 id="2-2-1-add-key">2.2.1 Add Key</h3>
-<p>Click the <strong> + floating button </strong> to display <code>Add Key Dialog</code>, select the sector number by sliding the picker, and enter 6 bytes (12 digits or letters) valid key A or key B, click <code>Complete</code> to save.</p>
-<h3 id="2-2-2-modify-key">2.2.2 Modify Key</h3>
-<p>Click the <strong> modify button </strong> will display the <code>Modify Key Dialog</code>,  select new  sector number by sliding the picker, and modify the 6 bytes (12 digits or letters) valid key A or key B, click <code>Complete</code>save new keys or sector.</p>
-<h3 id="2-2-3-read-sector">2.2.3 Read Sector</h3>
-<p>After the card is close to the NFC antenna, click on the <strong> read button </strong> will read 4 block of data from clicked sector, you could modify and write the new data.  </p>
-<h3 id="2-2-4-data-sniff-compare">2.2.4 Data Sniff/Compare</h3>
-<p>Must add correct keys before. After marked, it can be  compared with highlight datas.<br>[Pro Version] Data Backups/Restore, Compare vertically, Rule Repository.  </p>
-<h3 id="2-2-5-add-rule">2.2.5 Add Rule</h3>
-<h3 id="2-2-5-0-interface-introduction">2.2.5.0 Interface Introduction</h3>
-<p>Click data item to add/modify rule.<br>Click icon to copy rule to another block of another sector.<br>[Pro Version] Rule copy.
-<img src="img/select_block.jpeg" alt="image"></p>
-<h4 id="2-2-5-1-add-money-byte">2.2.5.1 Add Money Byte</h4>
-<p>Mark the byte, then verify the money is correct, and click Next.<br><img src="img/mark_money.jpeg" alt="image">. </p>
-<h4 id="2-2-5-2-add-checked-byte">2.2.5.2 Add Checked Byte</h4>
-<p>Check the bytes that changes and add expressions. Make sure that it&#39;s correct then click OK.<br><img src="img/mark_check.jpeg" alt="image"></p>
-<h5 id="2-2-5-2-1-supported-operations-">2.2.5.2.1 Supported operations:</h5>
-<blockquote>
-<p>And: +<br>Subtraction: -<br>Multiply: *<br>division: /<br>xor: @^<br>not: @~  
-   </p>
-</blockquote>
-<p><em>Note: Only decimal arithmetic is supported</em><br><strong>Get Expressions Example <a href="./help_add_rules.html">Click Here</a></strong>  </p>
-<h5 id="2-2-5-2-2-sort-expressions">2.2.5.2.2 Sort Expressions</h5>
-<p>Press and drag to sort Expressions.<br>The calculation is from top to the end.</p>
-<h3 id="2-2-6-sort-keys">2.2.6 Sort Keys</h3>
-<p>Press and drag to sort Keys.</p>
-<h3 id="2-2-7-remove-key">2.2.7 Remove Key</h3>
-<p>Slide the item toward right to remove the key.</p>
-<h3 id="2-2-8-key-lists">2.2.8 key Lists</h3>
-<p>Long press the floating button to show key lists.  </p>
-<h2 id="2-3-charge">2.3 Charge</h2>
-<h3 id="2-3-1-set-quotas">2.3.1 Set Quotas</h3>
-<p>Long press <strong>the Charge TextView</strong> , you can charge as the Quotas. </p>
-<h3 id="2-3-2-clear-record">2.3.2 Clear Record</h3>
-<p>Long press <strong>the recharge record list</strong>, then pop up the dialog will allow you to to clear the recharge record or not.  </p>
-<h3 id="2-3-3-show-calculate-result">2.3.3 Show Calculate Result</h3>
-<p>Long press the floating button to preview the data generated on <strong>Rule</strong>.</p>
-<h1 id="3-debug">3.Debug</h1>
-<p>Long press the floating button to enable debugging features.</p>
+  <div id="content"><h1 id="how-to-use-mtools">How to use MTools</h1>
+<p>Firstly, it&#39;s an APP that I used to write hex datas back to mifare 1k card with my NFC phone - Moto X 2013. And after several steps of studies and development, I find a way to read the money data from card and generate legal hex data then write back it to the card. And it works perfectly, which made me so happy. Seemed like I&#39;m a dark hacker, can easily change the money on the card with a simple app.
+After that I want to share this happiness to all guys who are interested in RFID. After about 3 weeks development the first version of MTools came out.
+Here&#39;re the things that you need to know to use it better.</p>
 <ul>
-<li>【Lists】Add a card by click the icon of <code>Add card dialog</code>me     </li>
+<li>Get the keys from all sectors</li>
+<li>Compare to find the sector with money data</li>
+<li>Add card, sector and  keys to MTools</li>
+<li>Record data from after every consumption in sniffer</li>
+<li>Compare and analyze the rules of dynamic bytes</li>
+<li>Finish the expression</li>
+<li>Charge mifare 1k  card with one click</li>
 </ul>
-<h1 id="4-dependency">4.Dependency</h1>
-<p>Thanks for the friends on the contribution of open source community, regardless of rank.  </p>
-<ul>
-<li><code>ikarus23</code> <a href="https://github.com/ikarus23/MifareClassicTool" title="MifareClassicTool">MifareClassicTool</a>  </li>
-<li><code>afollestad</code> <a href="https://github.com/afollestad/material-dialogs" title="material-dialogs">material-dialogs</a>  </li>
-<li><code>markormesher</code> <a href="https://github.com/markormesher/android-fab">android-fab</a>  </li>
-<li><code>didikee</code> <a href="https://github.com/didikee/AndroidDonate" title="AndroidDonate">AndroidDonate</a>  </li>
-<li><code>Ice-Box</code> <a href="http://catchingnow.com">Ice-Box</a>  </li>
-</ul>
+<hr>
+<h2 id="get-the-keys-from-all-sectors">Get the keys from all sectors</h2>
+<p>Some cards using default keys like <code>FFFFFFFFFFFF</code> <code>000000000000</code> <code>A1B2C3D4E56F</code> etc, which you can try to dump keys with <strong>Mifare Classic Tools</strong> on the NFC android phone. 
+If the card is not full encrypted, it can be cracked with RFID device to burst crack. Like <strong>ACR122U</strong> or <strong>PN532</strong>.</p>
+<p>If the card is full encrypted,  only <strong>PM3</strong> can crack the keys.</p>
+<h2 id="compare-to-find-the-sector-with-money-data">Compare to find the sector with money data</h2>
+<p>With keyA or keyB of all sectors of card, datas need to be gathered. And compare them after every consumption, so you can find the sector that datas change, which means the money data may in that sector.</p>
+<h2 id="add-card-sector-and-keys-to-mtools">Add card, sector and  keys to MTools</h2>
+<p>The 4th block of every sector contains </p>
+<p><code>keyA(6 bytes) +  Access Control(4) + keyB(6)</code></p>
+<h2 id="record-data-from-in-sniffer">Record data from in sniffer</h2>
+<p>With sector number and valid keys added, it can be easy to compare data with different money amount.</p>
+<p>Mark the money bytes(contain money data) and check bytes(mostly the changing bytes)</p>
+<h2 id="compare-and-analyze-the-rules-of-dynamic-bytes">Compare and analyze the rules of dynamic bytes</h2>
+<p>Pay attentions on HEX or DEC, Reverse or not and Rate on Money bytes.</p>
+<p>Compare the Summation or XOR values with up and down check bytes.</p>
+<h2 id="finish-the-expression">Finish the expression</h2>
+<p>MTools use <a href="http://mathparser.org/">mXparser</a> to calculate expression in rules. Please follow the tips in MTools to add expression.</p>
+<h2 id="charge-mifare-1k-card-with-one-click">Charge mifare 1k  card with one click</h2>
+<p>Before Charge card, an accurate simulation is necessary, just by long click on the $ button after tag card.</p>
+<h2 id="one-more-thing">One more thing</h2>
+<p>MTools support work with extra device like ACR122U, which means you can use a phone without NFC hardware.</p>
 </div></body>
 </html>

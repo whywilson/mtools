@@ -8,9 +8,9 @@ Attention:
 2. KeyA and keyB of useful sector. 
 3. Comply with local laws, only used for study and testing.
 
-
-
-# 2.Tutorial
+# 2.Tutorial  
+[How to use MTools](./how_to_use_mtools.html)  
+---  
 ## 2.1 Lists
 ### 2.1.1 Add Card
 Click the **+ floating button** will display `Add Card Dialog`, put the Mifare Classic Card close to the NFC antenna, then you can add a card to the APP.
