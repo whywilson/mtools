@@ -288,87 +288,40 @@ img {
   <title>MDReader</title>
 </head>
 <body>
-  <div id="content"><p><a href="../index.html">Select Language</a></p>
-<h1 id="1-概览">1.概览</h1>
-<p>一个使<code>Mifare卡片</code>充值更快捷的应用。<br>请确保以下3点：</p>
-<ol>
-<li>设备支持<code>Mifare Classic 1K Card</code><br>(或支持OTG连接<code>ACR122U</code>)</li>
-<li>已知卡片的有效扇区的密钥keyA和keyB</li>
-<li>遵守当地法律，仅供学习测试使用  </li>
-</ol>
-<h1 id="2-向导">2.向导</h1>
-<h2 id="-如何使用mtools-how_to_use_mtools-html-"><a href="./how_to_use_mtools.html">如何使用MTools</a>  </h2>
-<h2 id="2-1-列表">2.1 列表</h2>
-<h3 id="2-1-1-添加卡片">2.1.1 添加卡片</h3>
-<p>点击<strong>+浮动按钮</strong>后将显示<code>添加卡片对话框</code>，将Mifare Classic卡片紧贴NFC天线，即可添加卡片到APP。
-  </p>
-<h3 id="2-1-2-卡片排序">2.1.2 卡片排序</h3>
-<p>按住并上下拖动即可重新排序。</p>
-<h3 id="2-1-3-删除卡片">2.1.3 删除卡片</h3>
-<p>向右滑动对应项目即可删除。</p>
-<h2 id="2-2-详情">2.2 详情</h2>
-<h3 id="2-2-0-界面标识">2.2.0 界面标识</h3>
-<p><img src="img/button_func.jpeg" alt="image"></p>
-<h3 id="2-2-1-添加密钥">2.2.1 添加密钥</h3>
-<p>点击<strong>+浮动按钮</strong>后将显示<code>添加密钥对话框</code>，通过滑动选择扇区序号，并输入6字节(共12位数字或字母)有效密钥A或密钥B，点击<code>完成</code>保存。</p>
-<h3 id="2-2-2-修改密钥">2.2.2 修改密钥</h3>
-<p>点击<strong>修改按钮</strong>后将显示<code>修改密钥对话框</code>，通过滑动选择修改扇区序号，并修改6字节(共12位数字或字母)有效密钥A或密钥B，点击<code>完成</code>保存新密钥或扇区。</p>
-<h3 id="2-2-3-读写扇区">2.2.3 读写扇区</h3>
-<p>将卡片紧贴NFC天线后，点击<strong>读取按钮</strong>后将读取该扇区对应4个块的数据，可修改数据并<code>写入</code>新数据。 
-若密钥修改，将同步保存新密钥。  </p>
-<h3 id="2-2-4-数据对比">2.2.4 数据对比</h3>
-<p>需已知密钥，标记字节后，可高亮对比数据与金额。<br>【付费功能】数据备份，垂直对比，规则仓库。</p>
-<h3 id="2-2-5-添加规则">2.2.5 添加规则</h3>
-<h4 id="2-2-5-0-界面标识">2.2.5.0 界面标识</h4>
-<p>点击数据添加规则<br>点击图标复制规则<br>【付费功能】规则复制<br><img src="img/select_block.jpeg" alt="image"></p>
-<h4 id="2-2-5-1-添加金额字节">2.2.5.1 添加金额字节</h4>
-<p>标记金额对应的字节，并调节参数，确认金额无误后，下一步<br><img src="img/mark_money.jpeg" alt="image">  </p>
-<h4 id="2-2-5-2-添加校验字节">2.2.5.2 添加校验字节</h4>
-<p>勾选校验字节，即变化的字节，添加表达式，无误后点击OK保存<br><img src="img/mark_check.jpeg" alt="image">  </p>
-<h5 id="2-2-5-2-1-表达式">2.2.5.2.1 表达式</h5>
-<p>支持算法：</p>
-<blockquote>
-<p>加: +<br>减：-<br>乘：*<br>除：/<br>按位异或: @^<br>按位取反: @~  
-  </p>
-</blockquote>
-<p><em>注意：仅支持十进制数字运算</em><br><strong>查看表达式示例 <a href="./help_add_rules.html">请点击</a></strong>  </p>
-<h5 id="2-2-5-3-2-表达式排序">2.2.5.3.2 表达式排序</h5>
-<pre><code>  按住并上下拖动即可重新排序，靠上先计算
-</code></pre>
-<p>  </p>
-<h3 id="2-2-6-扇区排序">2.2.6 扇区排序</h3>
-<p>按住并上下拖动即可重新排序。</p>
-<h3 id="2-2-7-扇区密钥">2.2.7 扇区密钥</h3>
-<p>向右滑动对应项目即可删除。</p>
-<h3 id="2-2-8-预览密钥列表">2.2.8 预览密钥列表</h3>
-<p>长按浮动按钮即可。</p>
-<h2 id="2-3-充值">2.3 充值</h2>
-<h3 id="2-3-1-设置定额">2.3.1 设置定额</h3>
-<p>长按标题下的<strong>充值</strong>文字按钮，即可设定为定额充值。</p>
-<h3 id="2-3-2-清除记录">2.3.2 清除记录</h3>
-<p>长按充值记录，即可弹出对话框选择是否清空充值记录。</p>
-<h3 id="2-3-3-预览计算结果">2.3.3 预览计算结果</h3>
-<p>长按浮动按钮，可预览由 <strong>规则</strong> 生成的数据。</p>
-<h1 id="3-调试">3.调试</h1>
-<p>可开启浮动按钮的其他功能等，包括：  </p>
+  <div id="content"><h1 id="如何使用mtools">如何使用MTools</h1>
+<p>首先，它是一个APP，我曾经用我的NFC手机--Moto X 2013将十六进制数据写回mifare 1k卡。经过几个步骤的研究和开发，我找到了一种方法从卡中读取货币数据并生成合法的十六进制 然后将数据写回卡中。 而且效果很好，让我很开心。 看起来像我是一个暗黑的黑客，可以通过一个简单的应用程序轻松改变卡上的金额。
+在那之后，我想与所有对RFID感兴趣的人分享这种快乐。 经过大约3周的开发，第一版MTools问世。
+以下是您需要了解的以更好得使用他。</p>
 <ul>
-<li>【列表】点击<code>添加卡片对话框</code>中心NFC图标可添加卡片，UID为本设备UID前4字节  </li>
+<li>获取所有扇区的密钥</li>
+<li>比较以找到很有金额数据的扇区</li>
+<li>向MTools添加卡，扇区和密钥</li>
+<li>在嗅探器中记录每次消费后的数据</li>
+<li>比较和分析动态字节的规则</li>
+<li>完成表达式</li>
+<li>一键即充</li>
 </ul>
-<h1 id="4-依赖">4.依赖</h1>
-<p>感谢以下网友对开源社区的贡献，排名不分先后。  </p>
-<ul>
-<li><code>ikarus23</code> <a href="https://github.com/ikarus23/MifareClassicTool">MifareClassicTool</a>  </li>
-<li><code>afollestad</code> <a href="https://github.com/afollestad/material-dialogs">material-dialogs</a>  </li>
-<li><code>markormesher</code> <a href="https://github.com/markormesher/android-fab">android-fab</a>  </li>
-<li><code>didikee</code> <a href="https://github.com/didikee/AndroidDonate">AndroidDonate</a>  </li>
-<li><code>Ice-Box</code><a href="http://catchingnow.com">Ice-Box</a>  </li>
-</ul>
-<h1 id="5-教程">5.教程</h1>
-<p>以下教程来自网友</p>
-<ul>
-<li><a href="tutorial/tutorial_0.html">教程1: 水卡充值</a>   </li>
-<li><a href="tutorial/tutorial_compare_hex_data.html">教程2: 对比分析HEX数据</a></li>
-</ul>
-<p><em>欢迎投稿</em></p>
+<hr>
+<h2 id="获取所有扇区的密钥">获取所有扇区的密钥</h2>
+<p>一些卡片使用默认密钥，像 <code>FFFFFFFFFFFF</code> <code>000000000000</code> <code>A1B2C3D4E56F</code> 等等，你还可以通过<strong>Mifare Classic Tools</strong>尝试卡片是否使用了这些密钥。 
+如果卡未完全加密，则可能会被RFID设备爆破，比如<strong>ACR122U</strong> 或<strong>PN532</strong>。</p>
+<p>如果卡已完全加密，则只有<strong>PM3</strong>可以破解密钥。</p>
+<h2 id="比较以找到很有金额数据的扇区">比较以找到很有金额数据的扇区</h2>
+<p>使用卡的所有扇区的keyA或keyB，就可以收集数据。 并在每次消费后对它们进行比较，这样你就可以找到数据发生变化的部门，这意味着该扇区可能有金额数据。</p>
+<h2 id="向mtools添加卡-扇区和密钥">向MTools添加卡，扇区和密钥</h2>
+<p>每个扇区的第4块包括</p>
+<p><code>keyA(6 bytes) +  Access Control(4) + keyB(6)</code></p>
+<h2 id="在嗅探器中记录每次消费后的数据">在嗅探器中记录每次消费后的数据</h2>
+<p>通过添加扇区号和有效密钥，可以很容易地比较具有不同金额的数据。</p>
+<p>标记金额字节（包含货币数据）和检查字节（主要是变化的字节）</p>
+<h2 id="比较和分析动态字节的规则">比较和分析动态字节的规则</h2>
+<p>金额字节上注意十六进制或十进制，是否倒置和倍率问题。</p>
+<p>校验位请比较上下两位的和或异或值来找到规律。</p>
+<h2 id="完成表达式">完成表达式</h2>
+<p>MTools 使用<a href="http://mathparser.org/">mXparser</a> 来计算规则，请根据MTools中的提示来添加表达式。</p>
+<h2 id="一键即充">一键即充</h2>
+<p>充值前，请贴卡，然后长安$按钮模拟计算，保住数据无误后再写入。</p>
+<h2 id="one-more-thing">One more thing</h2>
+<p>MTools 支持外置设备 ACR122U，意味着就算没有NFC的手机同样可以使用MTools。</p>
 </div></body>
 </html>
