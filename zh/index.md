@@ -4,7 +4,7 @@
 
 最后更新 `2018/12/27`
 
-[点击下载](https://github.com/whywilson/mtools/releases/download/20181227/MTools_20181227.apk)  [更新日志](./update_log.html)
+[更新日志](./update_log.html)
 
 # 1.概览
 

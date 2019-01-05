@@ -1,3 +1,13 @@
+### Ver.20190106
+
+```
+1.支持Chrome Custom Tabs打开帮助
+2.修复keyB在NFC与ACR22U无法读取写入的问题
+3.充值界面可增加或覆盖金额
+```
+
+[点击下载](https://github.com/whywilson/mtools/releases/download/20190106/mtools.apk)
+
 ### Ver.20181227
 
 ```
@@ -9,8 +19,6 @@
 1.Fix bugs on priority when exiting Sniffer
 2.Fix bugs on keyB auth on ACR122U.
 ```
-
-[点击下载](https://github.com/whywilson/mtools/releases/download/20181227/MTools_20181227.apk)
 
 ### Ver.20181216
 
