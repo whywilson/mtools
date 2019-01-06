@@ -1,12 +1,14 @@
-### Ver.20190106
+### Ver.20190107
 
 ```
 1.支持Chrome Custom Tabs打开帮助
-2.修复keyB在NFC与ACR22U无法读取写入的问题
+2.修复keyB无法读取写入的问题
 3.充值界面可增加或覆盖金额
+4.修复拷贝按钮不居中问题
+5.移除领取红包相关
 ```
 
-[点击下载](https://github.com/whywilson/mtools/releases/download/20190106/mtools.apk)
+[点击下载](https://github.com/whywilson/mtools/releases/download/20190107/mtools.apk)
 
 ### Ver.20181227
 
@@ -14,7 +16,7 @@
 1.移除写入成功后的对话框
 2.修复嗅探加载问题
 
-这会是2018年MTools在酷安的最后一次更新，并且应用将在2019年1月1日前前下架，具体原因见APP内提醒，意在告诉某些用户不要用于违法用途。
+这会是2018年MTools在酷安的最后一次更新，并且应用将在2019年1月1日前下架，具体原因见APP内提醒，意在告诉某些用户不要用于违法用途。
 
 1.Fix bugs on priority when exiting Sniffer
 2.Fix bugs on keyB auth on ACR122U.
