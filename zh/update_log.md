@@ -8,7 +8,7 @@
 5.移除领取红包相关
 ```
 
-[点击下载](https://github.com/whywilson/mtools/releases/download/20190107/mtools.apk)
+[点击下载](https://github.com/whywilson/mtools/releases/download/20190112/mtools.apk)
 
 ### Ver.20181227
 
