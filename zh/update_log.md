@@ -1,3 +1,16 @@
+### Ver.20190213
+
+```
+1.优化写卡前预览界面
+2.写卡前预览可隐藏表达式
+3.简化运算符(见添加表达式提示)
+4.添加读取USB, 控制振动权限
+```
+
+[点击下载](https://github.com/whywilson/mtools/releases/download/20190213/mtools.apk)
+
+
+
 ### Ver.20190112
 
 ```
@@ -8,8 +21,6 @@
 4.修复拷贝按钮不居中问题
 5.移除领取红包相关
 ```
-
-[点击下载](https://github.com/whywilson/mtools/releases/download/20190112/mtools.apk)
 
 ### Ver.20181227
 
