@@ -11,6 +11,13 @@ Attention:
 # 2.Tutorial  
 [How to use MTools](./how_to_use_mtools.html)  
 ---  
+
+### [YouTube](https://www.youtube.com/channel/UC5ZyMTY35t5G4BsmTfjWU9g)
+
+- [Use MTools to read/write/clone datas on Mi Band 3 NFC](https://youtu.be/1Bl-FFALNic)
+- [Hack Mifare 1K Card without ACR122U only MTools](https://youtu.be/hEwhJWAt3a8)
+- [Burst Attack Mifare 1K Card with MKeys on NFC Android Phone](https://youtu.be/CKSBDwRg7Wo)
+
 ## 2.1 Lists
 ### 2.1.1 Add Card
 Click the **+ floating button** will display `Add Card Dialog`, put the Mifare Classic Card close to the NFC antenna, then you can add a card to the APP.
@@ -49,7 +56,7 @@ Check the bytes that changes and add expressions. Make sure that it's correct th
 > division: /  
 > xor: @^  
 > not: @~  
-   
+
 
 *Note: Only decimal arithmetic is supported*    
 **Get Expressions Example [Click Here](./help_add_rules.html)**  

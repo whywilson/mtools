@@ -2,7 +2,7 @@
 
 # 0.更新
 
-最后更新 **2019/01/12**
+最后更新 **2019/02/13**
 
 [更新日志与下载](./update_log.html)
 
@@ -19,6 +19,13 @@
 # 2.向导  
 [如何使用MTools](./how_to_use_mtools.html)  
 ---
+
+### [YouTube](https://www.youtube.com/channel/UC5ZyMTY35t5G4BsmTfjWU9g)
+
+- [Use MTools to read/write/clone datas on Mi Band 3 NFC](https://youtu.be/1Bl-FFALNic)
+- [Hack Mifare 1K Card without ACR122U only MTools](https://youtu.be/hEwhJWAt3a8)
+- [Burst Attack Mifare 1K Card with MKeys on NFC Android Phone](https://youtu.be/CKSBDwRg7Wo)
+
 ## 2.1 列表  
 ### 2.1.1 添加卡片  
 点击**+浮动按钮**后将显示`添加卡片对话框`，将Mifare Classic卡片紧贴NFC天线，即可添加卡片到APP。
