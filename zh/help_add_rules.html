@@ -285,7 +285,7 @@ table tr:nth-child(2n) {
 img {
   max-width: 100%
 }</style>
-  <title>MDReader</title>
+  <title>MTools 添加表达式</title>
 </head>
 <body>
   <div id="content"><h2 id="添加校验字表达式">添加校验字表达式</h2>
@@ -295,37 +295,49 @@ img {
 <tr>
 <th>名称</th>
 <th>运算符</th>
+<th>简化</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>+ - × ÷</td>
 <td>+ - * /</td>
+<td></td>
 </tr>
 <tr>
 <td>括号</td>
-<td>()</td>
+<td>( )</td>
+<td></td>
 </tr>
 <tr>
 <td>与</td>
 <td>@&amp;</td>
+<td>and</td>
 </tr>
 <tr>
 <td>或</td>
 <td>@&#124;</td>
+<td>or</td>
 </tr>
 <tr>
 <td>异或</td>
 <td>@^</td>
+<td>xor</td>
 </tr>
 <tr>
 <td>取反</td>
 <td>@~</td>
+<td>not</td>
 </tr>
 </tbody>
 </table>
 <h3 id="举例">举例</h3>
-<p>校验位算法 → 填写方式<br><code>b2=b1</code> →<code>b2=b1</code><br><code>b4=b2 + 0x1F</code> → <code>b4=b2+31</code><br><code>b15=b0 xor b1</code> → <code>b15=b0@^b1</code><br><code>b2=not b0</code> → <code>b2=@~b0</code><br><em>注1：请将十六进制数转换成十进制</em><br><strong>注2：按从上至下的顺序计算</strong></p>
+<p><code>b2等于b1</code> →<code>b2=b1</code><br><code>b4=b2加上0x1F</code> → <code>b4=b2+31</code><br><code>b15=b0异或b1</code> → <code>b15=b0 xor b1</code><br><code>b2=b0取反</code> → <code>b2=not b0</code>  </p>
+<h3 id="注意">注意</h3>
+<ul>
+<li>请将十六进制数转换成十进制</li>
+<li>上下拖动可更改计算顺序</li>
+</ul>
 <h3 id="拓展用法">拓展用法</h3>
 <p>见 <a href="http://mathparser.org/?s=Bitwise">mXparser</a> 官网</p>
 </div></body>
