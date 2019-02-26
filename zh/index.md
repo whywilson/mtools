@@ -65,9 +65,10 @@
 > 减：-  
 > 乘：*  
 > 除：/  
-> 按位异或: @^  
-> 按位取反: @~  
-
+> 按位异或: @^  或 xor  
+> 按位取反: @~ 或 not  
+> 按位与: @& 或 and  
+> 按位或: @| 或 or 
 
 *注意：仅支持十进制数字运算*  
 **查看表达式示例 [请点击](./help_add_rules.html)**  
@@ -95,15 +96,20 @@
 
 # 4.依赖
 感谢以下网友对开源社区的贡献，排名不分先后。  
-- `ikarus23` [MifareClassicTool](https://github.com/ikarus23/MifareClassicTool)  
-- `afollestad` [material-dialogs](https://github.com/afollestad/material-dialogs)  
-- `markormesher` [android-fab](https://github.com/markormesher/android-fab)  
-- `didikee` [AndroidDonate](https://github.com/didikee/AndroidDonate)  
-- `Ice-Box`[Ice-Box](http://catchingnow.com)  
+- `ikarus23`  [MifareClassicTool](https://github.com/ikarus23/MifareClassicTool)  
+- `afollestad`  [material-dialogs](https://github.com/afollestad/material-dialogs)  
+- `markormesher`  [android-fab](https://github.com/markormesher/android-fab)  
+- `didikee`  [AndroidDonate](https://github.com/didikee/AndroidDonate) 
+- `Ice-Box` [Ice-Box](http://catchingnow.com)
+- `kai-morich` [usb-serial-for-android](https;//github.com/kai-morich/usb-serial-for-android)  
 
-# 5.教程  
+# 5.外接设备
+- OTG + ACR122U [视频演示](https://youtu.be/a7nUWIN7s-4)
+- OTG + UART + PN532  
+
+# 6.教程  
 以下教程来自网友
 - [教程1: 水卡充值](tutorial/tutorial_0.html)   
 - [教程2: 对比分析HEX数据](tutorial/tutorial_compare_hex_data.html)
 
-*欢迎投稿*
+*欢迎投稿提交教程*
