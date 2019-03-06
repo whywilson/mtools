@@ -1,3 +1,12 @@
+### Ver.20190306
+
+```
+1.支持PN532读卡写卡
+2.极力优化PN532通信
+```
+
+[点击下载](https://github.com/whywilson/mtools/releases/download/20190306/mtools.apk)
+
 ### Ver.20190213
 
 ```
@@ -7,9 +16,7 @@
 4.添加读取USB, 控制振动权限
 ```
 
-[点击下载](https://github.com/whywilson/mtools/releases/download/20190213/mtools.apk)
-
-
+[点击下载](
 
 ### Ver.20190112
 
