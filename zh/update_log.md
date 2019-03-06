@@ -1,3 +1,12 @@
+### Ver.20190310
+
+```
+1.修复NFC无法添加卡
+2.修复PN532添加卡无UID
+```
+
+[点击下载](https://github.com/whywilson/mtools/releases/download/20190310/mtools.apk)
+
 ### Ver.20190306
 
 ```
@@ -5,7 +14,7 @@
 2.极力优化PN532通信
 ```
 
-[点击下载](https://github.com/whywilson/mtools/releases/download/20190306/mtools.apk)
+[点击下载](
 
 ### Ver.20190213
 

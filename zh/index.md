@@ -2,18 +2,22 @@
 
 # 0.更新
 
-最后更新 **2019/03/16**
+最新正式版 **2019/03/10**
 
 [更新日志与下载](./update_log.html)
 
 # 1.概览
 
 一个使`Mifare卡片`充值更快捷的应用。  
+
 请确保以下3点：
 
 1. 设备支持`Mifare Classic 1K Card`  
-(或支持OTG连接`ACR122U`)
+
+  (或支持OTG连接`ACR122U` `PN532`)
+
 2. 已知卡片的有效扇区的密钥keyA和keyB
+
 3. 遵守当地法律，仅供学习测试使用  
 
 # 2.向导  
@@ -65,9 +69,10 @@
 > 减：-  
 > 乘：*  
 > 除：/  
-> 按位异或: @^  
-> 按位取反: @~  
-
+> 按位异或: @^  或 xor  
+> 按位取反: @~ 或 not  
+> 按位与: @& 或 and  
+> 按位或: @| 或 or 
 
 *注意：仅支持十进制数字运算*  
 **查看表达式示例 [请点击](./help_add_rules.html)**  
@@ -95,15 +100,24 @@
 
 # 4.依赖
 感谢以下网友对开源社区的贡献，排名不分先后。  
-- `ikarus23` [MifareClassicTool](https://github.com/ikarus23/MifareClassicTool)  
-- `afollestad` [material-dialogs](https://github.com/afollestad/material-dialogs)  
-- `markormesher` [android-fab](https://github.com/markormesher/android-fab)  
-- `didikee` [AndroidDonate](https://github.com/didikee/AndroidDonate)  
-- `Ice-Box`[Ice-Box](http://catchingnow.com)  
+- `ikarus23`  [MifareClassicTool](https://github.com/ikarus23/MifareClassicTool)  
+- `afollestad`  [material-dialogs](https://github.com/afollestad/material-dialogs)  
+- `markormesher`  [android-fab](https://github.com/markormesher/android-fab)  
+- `didikee`  [AndroidDonate](https://github.com/didikee/AndroidDonate) 
+- `Ice-Box` [Ice-Box](http://catchingnow.com)
+- `kai-morich` [usb-serial-for-android](https;//github.com/kai-morich/usb-serial-for-android)  
 
-# 5.教程  
+# 5.外接设备
+- OTG + ACR122U [视频演示](https://youtu.be/a7nUWIN7s-4)
+- OTG + UART + PN532  
+
+# 6.教程  
 以下教程来自网友
 - [教程1: 水卡充值](tutorial/tutorial_0.html)   
 - [教程2: 对比分析HEX数据](tutorial/tutorial_compare_hex_data.html)
 
-*欢迎投稿*
+*欢迎投稿提交教程*
+
+
+
+<a href="https://www.vultr.com/?ref=7136930"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a>
