@@ -1,3 +1,16 @@
+
+
+### Ver.20190407
+
+```
+1.dump支持NFC，PN532与ACR122U写入
+2.PN532模式下嗅探界面优化
+3.修复限制最大金额问题
+3.升级对话框可取消
+```
+
+[点击下载](https://github.com/whywilson/mtools/releases/download/20190407/mtools.apk)
+
 ### Ver.20190403
 
 ```
@@ -12,7 +25,6 @@
 9.嗅探按钮自动半透明
 ```
 
-[点击下载](https://github.com/whywilson/mtools/releases/download/20190403/mtools.apk)
 
 ### Ver.20190310
 
