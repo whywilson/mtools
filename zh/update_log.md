@@ -1,5 +1,15 @@
 
 
+### Ver.20190411
+
+```
+1.支持FF078069控制位扇区使用任意一密钥读写
+2.修复十进制&十六进制标记问题
+3.修复最大充值限额问题
+```
+
+[点击下载](https://github.com/whywilson/mtools/releases/download/2019/mtools.apk)
+
 ### Ver.20190407
 
 ```
@@ -8,8 +18,6 @@
 3.修复限制最大金额问题
 3.升级对话框可取消
 ```
-
-[点击下载](https://github.com/whywilson/mtools/releases/download/20190407/mtools.apk)
 
 ### Ver.20190403
 
