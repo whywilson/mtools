@@ -1,5 +1,15 @@
 
 
+### Ver.20190426
+
+```
+1.支持蓝牙连接PN532
+2.支持CRC8与CRC16算法(加密)
+3.提升PN532两种模式稳定性
+```
+
+[点击下载](https://github.com/whywilson/mtools/releases/download/2019/mtools.apk)
+
 ### Ver.20190411
 
 ```
@@ -7,8 +17,6 @@
 2.修复十进制&十六进制标记问题
 3.修复最大充值限额问题
 ```
-
-[点击下载](https://github.com/whywilson/mtools/releases/download/2019/mtools.apk)
 
 ### Ver.20190407
 
