@@ -1,8 +1,9 @@
 [Select Language](../index.html)  
 
 # 1.Overview
-Here is a Material Design APP to make charge `Mifare Classic Card` easily.  
+Here is a Material Design APP to make charge `Mifare Classic Card` easily.    
 Attention:  
+
 1. `Mifare 1K `Supported Device.  
 (Or OTG support `ACR122U`)
 2. KeyA and keyB of useful sector. 
@@ -51,18 +52,30 @@ Check the bytes that changes and add expressions. Make sure that it's correct th
 ![image](img/mark_check.jpeg)
 ##### 2.2.5.2.1 Supported operations:
 > And: +  
+>
 > Subtraction: -  
+>
 > Multiply: *  
+>
 > division: /  
+>
 > xor: @^  
+>
 > not: @~  
+>
+> Crc8:  crc8, crc8cdma2000, crc8darc, crc8dvbs2, crc8ebu, crc8icode, crc8itu, crc8maxim, crc8rohc, crc8wcdma  
+>
+> Crc16: crc16ccittfalse, crc16arc, crc16buypass, crc16cdma2000, crc16dds110, crc16dectr, crc16dectx, crc16dnp, crc16en13757, crc16genibus, crc16maxim, crc16mcrf4xx, crc16riello, crc16t10dif, crc16teledisk, crc16tms37157, crc16usb, crca, crc16kermit, crc16modbus, crc16x25, crc16xmodem    
 
+*Note1: Only decimal arithmetic is supported*    
 
-*Note: Only decimal arithmetic is supported*    
+*Note2: Crc expression must be called as shown above*    
+
 **Get Expressions Example [Click Here](./help_add_rules.html)**  
 
 ##### 2.2.5.2.2 Sort Expressions 
 Press and drag to sort Expressions.   
+
 The calculation is from top to the end.
 
 ### 2.2.6 Sort Keys
@@ -79,11 +92,7 @@ Long press **the recharge record list**, then pop up the dialog will allow you t
 ### 2.3.3 Show Calculate Result 
 Long press the floating button to preview the data generated on **Rule**.
 
-# 3.Debug  
-Long press the floating button to enable debugging features.
-- 【Lists】Add a card by click the icon of `Add card dialog`me     
-
-# 4.Dependency  
+# 3.Dependency  
 Thanks for the friends on the contribution of open source community, regardless of rank.  
 - `ikarus23` [MifareClassicTool](https://github.com/ikarus23/MifareClassicTool "MifareClassicTool")  
 - `afollestad` [material-dialogs](https://github.com/afollestad/material-dialogs "material-dialogs")  
