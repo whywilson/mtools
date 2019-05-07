@@ -1,11 +1,10 @@
-
-
-### Ver.20190505
+### Ver.20190508
 
 ```
 1.支持蓝牙连接PN532
 2.支持CRC8与CRC16算法(加密)
 3.提升PN532读写速度
+4.兼容无NFC设备
 ```
 
 [点击下载](https://github.com/whywilson/mtools/releases/download/2019/mtools.apk)
