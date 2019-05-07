@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://why.yuyeye.cc/mtools/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://why.yuyeye.cc/mtools/zh/index.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://why.yuyeye.cc/mtools/index.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://why.yuyeye.cc/mtools/en/index.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://why.yuyeye.cc/mtools/zh/update_log.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://why.yuyeye.cc/mtools/zh/how_to_use_mtools.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://why.yuyeye.cc/mtools/zh/help_add_rules.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://why.yuyeye.cc/mtools/zh/tutorial/tutorial_0.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://why.yuyeye.cc/cdn-cgi/l/email-protection</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://why.yuyeye.cc/mtools/zh/tutorial/tutorial_compare_hex_data.html</loc>
+    <priority>0.74</priority>
+  </url>
+
+  <url>
+    <loc>https://why.yuyeye.cc/mtools/en/help_add_rules.html</loc>
+    <priority>0.73</priority>
+  </url>
+
+  <url>
+    <loc>https://why.yuyeye.cc/mtools/en/how_to_use_mtools.html</loc>
+    <priority>0.71</priority>
+  </url>
+
+</urlset>
