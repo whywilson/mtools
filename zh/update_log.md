@@ -1,5 +1,13 @@
 [最新版 - 点击下载](https://github.com/whywilson/mtools/releases/download/2019/mtools.apk)
 
+### Ver.20190528
+
+```
+1.修复订单号认证问题
+2.兼容 Nfc-Tools 转储文件
+3.修复规则仓库权限问题
+```
+
 ### Ver.20190515
 
 ```
