@@ -1,5 +1,13 @@
 [最新版 - 点击下载](https://github.com/whywilson/mtools/releases/download/2019/mtools.apk)
 
+### Ver.20190603
+
+```
+1.开启PN532急速读写卡
+2.修复应用权限问题
+3.修复添加闪退问题
+```
+
 ### Ver.20190528
 
 ```
