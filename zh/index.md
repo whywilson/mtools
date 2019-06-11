@@ -10,16 +10,18 @@
 
 请确保以下3点：
 
-1. 设备支持`Mifare Classic 1K Card`  
+1. Android 设备支持`Mifare Classic 1K Card`  
 
-  (或支持OTG连接`ACR122U` `PN532`)
+  支持外接设备 ACR122U，USB-TTL串口PN532， 蓝牙SPP一体PN532
 
 2. 已知卡片的有效扇区的密钥keyA和keyB
 
 3. 遵守当地法律，仅供学习测试使用  
 
 # 2.向导  
-[如何使用MTools](./how_to_use_mtools.html)  
+###[如何使用MTools](./how_to_use_mtools.html)   
+###[外接设备支持类型](../external_device.html)
+
 ---
 
 ### [YouTube](https://www.youtube.com/channel/UC5ZyMTY35t5G4BsmTfjWU9g)
