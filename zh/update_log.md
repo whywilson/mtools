@@ -1,4 +1,10 @@
 [最新版 - 点击下载](https://github.com/whywilson/mtools/releases/download/2019/mtools.apk)
+### Ver.20190728
+
+```
+1.优化外接设备对话框
+2.PN532支持离线工作
+```
 
 ### Ver.20190611
 
