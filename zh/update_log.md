@@ -1,4 +1,11 @@
 [最新版 - 点击下载](https://github.com/whywilson/mtools/releases/download/2019/mtools.apk)
+### Ver.20190823
+
+```
+1.显示已连接设备信息
+2.应用内可切换语言
+```
+
 ### Ver.20190728
 
 ```
