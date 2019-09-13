@@ -1,4 +1,11 @@
 [最新版 - 点击下载](https://github.com/whywilson/mtools/releases/download/2019/mtools.apk)
+### Ver.20190913
+
+```
+1.优化嗅探本地记录加载速度
+2.修复取消标记第一个校验位崩溃问题
+```
+
 ### Ver.20190823
 
 ```
