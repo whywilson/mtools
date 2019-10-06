@@ -1,4 +1,10 @@
 [最新版 - 点击下载](https://github.com/whywilson/mtools/releases/download/2019/mtools.apk)
+### Ver.20191006
+
+```
+1.支持选择字典读取所有扇区
+```
+
 ### Ver.20190913
 
 ```
