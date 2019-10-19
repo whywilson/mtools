@@ -1,4 +1,10 @@
 [最新版 - 点击下载](https://github.com/whywilson/mtools/releases/download/2019/mtools.apk)
+### Ver.20191019
+
+```
+1.支持设置贴卡是否自动启动
+```
+
 ### Ver.20191006
 
 ```
