@@ -5,7 +5,8 @@ Here is a Material Design APP to make charge `Mifare Classic Card` easily.
 Attention:  
 
 1. `Mifare 1K `Supported Device.  
-(Or OTG support `ACR122U`)
+ - USB:  `ACR122U`  `PN532`
+ - Bluetooth:  `PN532`
 2. KeyA and keyB of useful sector. 
 3. Comply with local laws, only used for study and testing.
 
@@ -99,6 +100,7 @@ Thanks for the friends on the contribution of open source community, regardless 
 - `markormesher` [android-fab](https://github.com/markormesher/android-fab)  
 - `didikee` [AndroidDonate](https://github.com/didikee/AndroidDonate "AndroidDonate")  
 - `Ice-Box` [Ice-Box](http://catchingnow.com)  
+- `uccmawei` [FingerprintIdentify](https://github.com/uccmawei/FingerprintIdentify)
 
 
 

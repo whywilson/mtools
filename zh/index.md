@@ -66,21 +66,23 @@
 
 ##### 2.2.5.2.1 表达式  
 支持算法：
-> 加: +  
-> 减：-  
-> 乘：*  
-> 除：/  
-> 按位异或: @^  或 xor  
-> 按位取反: @~ 或 not  
-> 按位与: @& 或 and  
+> 加: + 
+> 减：- 
+> 乘：* 
+> 除：/ 
+> 按位异或: @^  或 xor 
+> 按位取反: @~ 或 not 
+> 按位与: @& 或 and 
 > 按位或: @| 或 or 
 
-*注意：仅支持十进制数字运算*  
-**查看表达式示例 [请点击](./help_add_rules.html)**  
-##### 2.2.5.3.2 表达式排序
-```  按住并上下拖动即可重新排序，靠上先计算
+*注意：仅支持十进制数字运算* 
 
-```
+**查看表达式示例 [请点击](./help_add_rules.html)**  
+
+##### 2.2.5.3.2 表达式排序
+
+ **按住并上下拖动即可重新排序，靠上先计算**
+
 ### 2.2.6 扇区排序
 按住并上下拖动即可重新排序。
 ### 2.2.7 扇区密钥
@@ -104,13 +106,14 @@
 - `ikarus23`  [MifareClassicTool](https://github.com/ikarus23/MifareClassicTool)  
 - `afollestad`  [material-dialogs](https://github.com/afollestad/material-dialogs)  
 - `markormesher`  [android-fab](https://github.com/markormesher/android-fab)  
-- `didikee`  [AndroidDonate](https://github.com/didikee/AndroidDonate) 
 - `Ice-Box` [Ice-Box](http://catchingnow.com)
 - `kai-morich` [usb-serial-for-android](https;//github.com/kai-morich/usb-serial-for-android)  
+- `uccmawei` [FingerprintIdentify](https://github.com/uccmawei/FingerprintIdentify)
 
 # 5.外接设备
 - OTG + ACR122U [视频演示](https://youtu.be/a7nUWIN7s-4)
-- OTG + UART + PN532  
+- OTG + UART + PN532   [视频演示](https://youtu.be/AbKZu_W71zE)
+- Bluetooth + PN532 [视频演示](https://youtu.be/CklwMj0lpYI)
 
 # 6.教程  
 以下教程来自网友
