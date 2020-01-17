@@ -1,6 +1,14 @@
-[最新版 - 点击下载](https://github.com/whywilson/mtools/releases/download/2019/mtools.apk)
+[最新版 - 点击下载](https://github.com/whywilson/mtools/releases/download/2020/mtools.apk)
 
 *提示：更新日志或未更新及时，但以上下载地址始终保持最新*
+### Ver.20200117
+
+```
+1.添加新的关于页面
+2.增加开源项目链接
+3.增加好用工具推荐
+4.优化读写卡逻辑
+```
 
 ### Ver.20200104
 
