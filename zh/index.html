@@ -24,14 +24,14 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
-img { max-width: 100%; vertical-align: middle; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
 button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
 p { line-height: inherit; }
-h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
 p { orphans: 4; }
 h1 { font-size: 2rem; }
 h2 { font-size: 1.8rem; }
@@ -43,7 +43,7 @@ h6 { font-size: 1rem; }
 .hidden { display: none; }
 .md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
 sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
@@ -82,7 +82,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print { 
-  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   html.blink-to-pdf { font-size: 13px; }
@@ -93,11 +93,12 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 a img, img a { cursor: pointer; }
 pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
 p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
 p > .md-image:only-child { display: inline-block; width: 100%; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .md-math-block { width: 100%; }
 .md-math-block:not(:empty)::after { display: none; }
-[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
 .md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
@@ -141,7 +142,7 @@ a.md-print-anchor { white-space: pre !important; border: none !important; displa
 .MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
-[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
 table tr th { border-bottom-width: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
@@ -176,6 +177,19 @@ body {
   	padding: 30px;
     padding-bottom: 100px;
 }
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
 #write > ul:first-child,
 #write > ol:first-child{
     margin-top: 30px;
@@ -512,6 +526,6 @@ header, .context-menu, .megamenu-content, footer{
 <span>按位异或: @^  或 xor </span>
 <span>按位取反: @~ 或 not </span>
 <span>按位与: @&amp; 或 and </span>
-<span>按位或: @| 或 or </span></p></blockquote><p><em><span>注意：仅支持十进制数字运算</span></em><span> </span></p><p><strong><span>查看表达式示例 </span><a href='./help_add_rules.html'><span>请点击</span></a></strong><span>  </span></p><h5><a name="22532-表达式排序" class="md-header-anchor"></a><span>2.2.5.3.2 表达式排序</span></h5><p><span> </span><strong><span>按住并上下拖动即可重新排序，靠上先计算</span></strong></p><h3><a name="226-扇区排序" class="md-header-anchor"></a><span>2.2.6 扇区排序</span></h3><p><span>按住并上下拖动即可重新排序。</span></p><h3><a name="227-扇区密钥" class="md-header-anchor"></a><span>2.2.7 扇区密钥</span></h3><p><span>向右滑动对应项目即可删除。</span></p><h3><a name="228-预览密钥列表" class="md-header-anchor"></a><span>2.2.8 预览密钥列表</span></h3><p><span>长按浮动按钮即可。</span></p><h2><a name="23-充值" class="md-header-anchor"></a><span>2.3 充值</span></h2><h3><a name="231-设置定额" class="md-header-anchor"></a><span>2.3.1 设置定额</span></h3><p><span>长按标题下的</span><strong><span>充值</span></strong><span>文字按钮，即可设定为定额充值。</span></p><h3><a name="232-清除记录" class="md-header-anchor"></a><span>2.3.2 清除记录</span></h3><p><span>长按充值记录，即可弹出对话框选择是否清空充值记录。</span></p><h3><a name="233-预览计算结果" class="md-header-anchor"></a><span>2.3.3 预览计算结果</span></h3><p><span>长按浮动按钮，可预览由 </span><strong><span>规则</span></strong><span> 生成的数据。</span></p><h1><a name="3调试" class="md-header-anchor"></a><span>3.调试  </span></h1><p><span>可开启浮动按钮的其他功能等，包括：  </span></p><ul><li><span>【列表】点击</span><code>添加卡片对话框</code><span>中心NFC图标可添加卡片，UID为本设备UID前4字节  </span></li></ul><h1><a name="4依赖" class="md-header-anchor"></a><span>4.依赖</span></h1><p><span>感谢以下网友对开源社区的贡献，排名不分先后。  </span></p><ul><li><code>ikarus23</code><span>  </span><a href='https://github.com/ikarus23/MifareClassicTool'><span>MifareClassicTool</span></a><span>  </span></li><li><code>afollestad</code><span>  </span><a href='https://github.com/afollestad/material-dialogs'><span>material-dialogs</span></a><span>  </span></li><li><code>markormesher</code><span>  </span><a href='https://github.com/markormesher/android-fab'><span>android-fab</span></a><span>  </span></li><li><code>Ice-Box</code><span> </span><a href='http://catchingnow.com'><span>Ice-Box</span></a></li><li><code>kai-morich</code><span> </span><a href='https;//github.com/kai-morich/usb-serial-for-android'><span>usb-serial-for-android</span></a><span>  </span></li><li><code>uccmawei</code><span> </span><a href='https://github.com/uccmawei/FingerprintIdentify'><span>FingerprintIdentify</span></a></li></ul><h1><a name="5外接设备" class="md-header-anchor"></a><span>5.外接设备</span></h1><ul><li><span>OTG + ACR122U </span><a href='https://youtu.be/a7nUWIN7s-4'><span>视频演示</span></a></li><li><span>OTG + UART + PN532   </span><a href='https://youtu.be/AbKZu_W71zE'><span>视频演示</span></a></li><li><span>Bluetooth + PN532 </span><a href='https://youtu.be/CklwMj0lpYI'><span>视频演示</span></a></li></ul><h1><a name="6教程" class="md-header-anchor"></a><span>6.教程  </span></h1><p><span>以下教程来自网友</span></p><ul><li><a href='tutorial/tutorial_0.html'><span>教程1: 水卡充值</span></a><span>   </span></li><li><a href='tutorial/tutorial_compare_hex_data.html'><span>教程2: 对比分析HEX数据</span></a></li></ul><p><em><span>欢迎投稿提交教程</span></em></p><p>&nbsp;</p><p><a href="https://www.vultr.com/?ref=7136930"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a></p></div>
+<span>按位或: @| 或 or </span></p></blockquote><p><em><span>注意：仅支持十进制数字运算</span></em><span> </span></p><p><strong><span>查看表达式示例 </span><a href='./help_add_rules.html'><span>请点击</span></a></strong><span>  </span></p><h5><a name="22532-表达式排序" class="md-header-anchor"></a><span>2.2.5.3.2 表达式排序</span></h5><p><span> </span><strong><span>按住并上下拖动即可重新排序，靠上先计算</span></strong></p><h3><a name="226-扇区排序" class="md-header-anchor"></a><span>2.2.6 扇区排序</span></h3><p><span>按住并上下拖动即可重新排序。</span></p><h3><a name="227-扇区密钥" class="md-header-anchor"></a><span>2.2.7 扇区密钥</span></h3><p><span>向右滑动对应项目即可删除。</span></p><h3><a name="228-预览密钥列表" class="md-header-anchor"></a><span>2.2.8 预览密钥列表</span></h3><p><span>长按浮动按钮即可。</span></p><h2><a name="23-充值" class="md-header-anchor"></a><span>2.3 充值</span></h2><h3><a name="231-设置定额" class="md-header-anchor"></a><span>2.3.1 设置定额</span></h3><p><span>长按标题下的</span><strong><span>充值</span></strong><span>文字按钮，即可设定为定额充值。</span></p><h3><a name="232-清除记录" class="md-header-anchor"></a><span>2.3.2 清除记录</span></h3><p><span>长按充值记录，即可弹出对话框选择是否清空充值记录。</span></p><h3><a name="233-预览计算结果" class="md-header-anchor"></a><span>2.3.3 预览计算结果</span></h3><p><span>长按浮动按钮，可预览由 </span><strong><span>规则</span></strong><span> 生成的数据。</span></p><h1><a name="3调试" class="md-header-anchor"></a><span>3.调试  </span></h1><p><span>可开启浮动按钮的其他功能等，包括：  </span></p><ul><li><span>【列表】点击</span><code>添加卡片对话框</code><span>中心NFC图标可添加卡片，UID为本设备UID前4字节  </span></li></ul><h1><a name="4依赖" class="md-header-anchor"></a><span>4.依赖</span></h1><p><span>感谢以下网友对开源社区的贡献，排名不分先后。  </span></p><ul><li><code>ikarus23</code><span>  </span><a href='https://github.com/ikarus23/MifareClassicTool'><span>MifareClassicTool</span></a><span>  </span></li><li><code>afollestad</code><span>  </span><a href='https://github.com/afollestad/material-dialogs'><span>material-dialogs</span></a><span>  </span></li><li><code>markormesher</code><span>  </span><a href='https://github.com/markormesher/android-fab'><span>android-fab</span></a><span>  </span></li><li><code>Ice-Box</code><span> </span><a href='http://catchingnow.com'><span>Ice-Box</span></a></li><li><code>kai-morich</code><span> </span><a href='https;//github.com/kai-morich/usb-serial-for-android'><span>usb-serial-for-android</span></a><span>  </span></li><li><code>uccmawei</code><span> </span><a href='https://github.com/uccmawei/FingerprintIdentify'><span>FingerprintIdentify</span></a></li></ul><h1><a name="5外接设备" class="md-header-anchor"></a><span>5.外接设备</span></h1><ul><li><span>OTG + ACR122U </span><a href='https://youtu.be/a7nUWIN7s-4'><span>视频演示</span></a></li><li><span>OTG + UART + PN532   </span><a href='https://youtu.be/AbKZu_W71zE'><span>视频演示</span></a></li><li><span>Bluetooth + PN532 </span><a href='https://youtu.be/CklwMj0lpYI'><span>视频演示</span></a></li></ul><p>&nbsp;</p><p><a href="https://www.vultr.com/?ref=7136930"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a></p></div>
 </body>
 </html>

@@ -115,13 +115,6 @@
 - OTG + UART + PN532   [视频演示](https://youtu.be/AbKZu_W71zE)
 - Bluetooth + PN532 [视频演示](https://youtu.be/CklwMj0lpYI)
 
-# 6.教程  
-以下教程来自网友
-- [教程1: 水卡充值](tutorial/tutorial_0.html)   
-- [教程2: 对比分析HEX数据](tutorial/tutorial_compare_hex_data.html)
-
-*欢迎投稿提交教程*
-
 
 
 <a href="https://www.vultr.com/?ref=7136930"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a>
